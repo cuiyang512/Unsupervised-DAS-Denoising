@@ -540,3 +540,45 @@ def localsimi(d1,d2,rect,niter=50,eps=0.0,verb=1):
 	ratio1 = divne(d1, d2, niter, rect, ndat, eps_dv, eps_cg, tol_cg,verb);
 	simi=np.sqrt(np.abs(ratio*ratio1));
 	return simi
+
+def localsimi(d1,d2,rect,niter=50,eps=0.0,verb=1):
+
+	import numpy as np
+	
+	if d1.ndim==2:
+		d1=np.expand_dims(d1, axis=2)
+	if d2.ndim==2:
+		d2=np.expand_dims(d2, axis=2)
+	[n1,n2,n3]=d1.shape
+
+	nd=n1*n2*n3;
+	ndat=[n1,n2,n3];
+	eps_dv=eps;
+	eps_cg=0.1; 
+	tol_cg=0.000001;
+
+	ratio = divne(d2, d1, niter, rect, ndat, eps_dv, eps_cg, tol_cg,verb);
+	ratio1 = divne(d1, d2, niter, rect, ndat, eps_dv, eps_cg, tol_cg,verb);
+	simi=np.sqrt(np.abs(ratio*ratio1));
+	return simi
+ 
+def cseis():
+    from matplotlib.colors import ListedColormap
+    import numpy as np
+    seis=np.concatenate(
+(np.concatenate((0.5*np.ones([1,40]),np.expand_dims(np.linspace(0.5,1,88),axis=1).transpose(),np.expand_dims(np.linspace(1,0,88),axis=1).transpose(),np.zeros([1,40])),axis=1).transpose(),
+np.concatenate((0.25*np.ones([1,40]),np.expand_dims(np.linspace(0.25,1,88),axis=1).transpose(),np.expand_dims(np.linspace(1,0,88),axis=1).transpose(),np.zeros([1,40])),axis=1).transpose(),
+np.concatenate((np.zeros([1,40]),np.expand_dims(np.linspace(0,1,88),axis=1).transpose(),np.expand_dims(np.linspace(1,0,88),axis=1).transpose(),np.zeros([1,40])),axis=1).transpose()),axis=1)
+    return ListedColormap(seis)
+
+
+
+def remove_columns_kurtosis(matrix, alpha):
+    from scipy.stats import kurtosis
+    kurtosis = kurtosis(matrix, axis=1)
+    
+    threshold = np.percentile(kurtosis, alpha*100)
+    
+    selected_columns = kurtosis > threshold
+
+    return matrix[selected_columns, :]
