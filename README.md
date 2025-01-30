@@ -6,23 +6,18 @@ Distributed Acoustic Sensing (DAS) has emerged as a widely used technology in va
 ![Network architecture](Figs/architecture.png)
 
 ## Reference
-    Cui Y., Waheed U., and Chen Y., “Unsupervised Deep Learning for DAS-VSP Denoising Using Attention-Based Deep Image Prior,” in revision.
+    Cui, Y., Waheed, U. B., & Chen, Y. (2025). Unsupervised Deep Learning for DAS-VSP Denoising Using Attention-Based Deep Image Prior. IEEE Transactions on Geoscience and Remote Sensing.
     Cui, Yang, Umair bin Waheed, and Yangkang Chen. "Background noise suppression for DAS-VSP data using attention-based deep image prior." SEG International Exposition and Annual Meeting. SEG, 2024.
 
 BibTex
 
-    @Article{DASdenoising,
-      author={Yang Cui and Umair bin Waheed and Yangkang Chen},
-      title = {Unsupervised Deep Learning for DAS-VSP Denoising Using Attention-Based Deep Image Prior},
-      journal={TBD},
-      year=2024,
-      volume={TBD},
-      issue={TBD},
-      number={TBD},
-      pages={TBD},
-      doi={TBD},
+    @article{cui2025unsupervised,
+      title={Unsupervised Deep Learning for DAS-VSP Denoising Using Attention-Based Deep Image Prior},
+      author={Cui, Yang and Waheed, Umair Bin and Chen, Yangkang},
+      journal={IEEE Transactions on Geoscience and Remote Sensing},
+      year={2025},
+      publisher={IEEE}
     }
-
     @inproceedings{cui2024background,
       title={Background noise suppression for DAS-VSP data using attention-based deep image prior},
       author={Cui, Yang and Waheed, Umair bin and Chen, Yangkang},
