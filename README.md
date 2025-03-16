@@ -5,6 +5,11 @@ Distributed Acoustic Sensing (DAS) has emerged as a widely used technology in va
 
 ![Network architecture](Figs/architecture.png)
 
+## Results comparsion on different surveys
+
+### Utah Forge and Groß Schönebeck Examples
+<img src="Figs/TGRS_Denoising_example_2_Yang.gif" alt="Forge1" width="200" height="400"> <img src="Figs/TGRS_Denoising_example_3_Yang.gif" alt="Forge2" width="200" height="400"> <img src="Figs/TGRS_Denoising_example_4_Yang.gif" alt="Forge3" width="200" height="400"> <img src="Figs/TGRS_Denoising_example_1_Yang.gif" alt="Groß Schönebeck" width="200" height="400">
+
 ## Reference
     Cui, Y., Waheed, U. B., & Chen, Y. (2025). Unsupervised Deep Learning for DAS-VSP Denoising Using Attention-Based Deep Image Prior. IEEE Transactions on Geoscience and Remote Sensing.
     Cui, Yang, Umair bin Waheed, and Yangkang Chen. "Background noise suppression for DAS-VSP data using attention-based deep image prior." SEG International Exposition and Annual Meeting. SEG, 2024.
