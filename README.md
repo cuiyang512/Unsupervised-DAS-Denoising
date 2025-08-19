@@ -20,9 +20,15 @@
 ## Overview
 Distributed Acoustic Sensing (DAS) has emerged as a widely used technology in various applications, including borehole microseismic monitoring, active source exploration, and ambient noise tomography. Compared with conventional geophones, a fiber optic cable has unique characteristics that allow it to withstand high-temperature and high-pressure environments. However, due to its high sensitivity, the obtained seismic records are often corrupted with unavoidable background noise, which introduces more uncertainty in the subsequent seismic data processing and interpretation. Thus, the development of robust denoising techniques for DAS data is crucial to minimize the impact of noise and enhance the reliability of seismic data processing and interpretation. In this work, we propose a ground-truth-free method for strong background noise suppression in Distributed Acoustic Sensing Vertical Seismic Profiling (DAS-VSP) data. Compared to existing deep learning methods, the proposed approach demonstrates promising generalizability in handling field examples across different surveys. The proposed method consists of four stages: training set extension with a patching scheme, feature selection with a kurtosis-based method, denoising with a deep image prior (DIP)-based unsupervised neural network, and an unpatching approach for denoised data reconstruction. Numerical experiments conducted on synthetic data and several profiles from the Utah FORGE project and the Groß Sch¨onebeck site demonstrate that the proposed method can effectively suppress most of the background noise while preserving hidden signals. Furthermore, the unsupervised learning approach is unconditionally generalizable when applied to vastly different field data because it does not require pre-labeled datasets for training.
 
+## Workflow
+<p align="center">
+  <img src="https://github.com/cuiyang512/Unsupervised-DAS-Denoising/blob/main/Figs/workflow_4_0308.png?raw=true" alt="Acoustic Wavefield Simulation" width="900">
+</p>
+
 ## Network Architecture
 
 ![Network Architecture](Figs/architecture.png)
+
 
 ## Results Comparison Across Surveys
 
