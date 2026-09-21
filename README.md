@@ -1,4 +1,4 @@
-## [Unsupervised Deep Learning for DAS-VSP Denoising Using Attention-Based Deep Image Prior](https://ieeexplore.ieee.org/document/10852267)
+## <h1 align="center">[Unsupervised Deep Learning for DAS-VSP Denoising Using Attention-Based Deep Image Prior](https://ieeexplore.ieee.org/document/10852267)</h1>
 <div align="center">
   <a href="https://github.com/cuiyang512" target="_blank">Yang Cui<sup>1</sup></a> &emsp;
   <a href="https://github.com/umairbinwaheed" target="_blank">Umair bin Waheed<sup>1 ,†</sup></a> &emsp;
